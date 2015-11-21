@@ -1,0 +1,546 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sample App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- my css from the theme i created -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- css for icons -->
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" href="themes/theme.css">
+    
+    <!-- jquery files -->
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+   <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+   <script type="text/javascript" src="JS.js"></script>
+</head>
+   
+        <body>
+
+    <section data-role="page" id="home" data-theme="a">
+        <!--home-->
+
+
+        <!--Panel Left-->
+
+        <div data-role="panel" id="left-panel" class="ui-panel ui-panel-position-left ui-panel-display-push ui-body-inherit ui-panel-animate ui-panel-open">
+
+            <div class="ui-panel-inner">
+                <ul data-role="listview" class="ui-listview">
+                    <li data-icon="delete" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete">Close</a>
+                    </li>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h4>Wine Tasting</h4>
+                        <ul data-role="listview">
+                            <li><a href="#s1" class="ui-btn">Step 1</a>
+                            </li>
+                            <li><a href="#s2" class="ui-btn">Step 2</a>
+                            </li>
+                            <li><a href="#s3" class="ui-btn">Step 3</a>
+                            </li>
+                            <li><a href="#s4" class="ui-btn">Step 4</a>
+                            </li>
+                            <li><a href="#s5" class="ui-btn">Step 5</a>
+                            </li>
+                            <li><a href="#s6" class="ui-btn">Step 6</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!--Panel Left End-->
+
+
+
+        <!--header-->
+        <div data-role="header" role="banner" class="ui-header ui-bar-inherit" data-theme="a">
+            <h1 class="ui-title" role="heading" aria-level="1">Being Nicaraguan</h1>
+            <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a>
+        </div>
+
+
+
+
+
+        <!--header end-->
+
+        <!--Frontpage-->
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <h1>Welcome to how to be Nicaraguan</h1>
+            <p>Traveling to Nicaragua? Want to learn more about the culture in Nicaragua? Heres the perfect tutorial to how to be Nicaraguan!</p>
+
+            <a href="#s1" id="startTut" class="ui-shadow ui-btn ui-corner-all" data-transition="pop" data-theme="b">Start Tutorial</a>
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                            <li><a href="#home" class="ui-btn ui-state-disabled" data-icon="home" data-iconpos="top">Home</a>
+                            </li>
+
+                            <li><a href="#info" class="ui-btn" data-icon="info" data-iconpos="top">About Me</a>
+                            </li>
+
+                </ul>
+            </div>
+        </div>
+
+        </article>
+    </section>
+       
+    <section data-role="page" id="info" data-theme="a">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <!--header-->
+            <h1>About Me</h1>
+        </div>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <p>My name is Hjalmar Ayestas. I am Nicaraguan and also a student at Algonquin College in the Mobile Application Design & Development program.</p>
+            
+            <a href="#popupMe" data-rel="popup" data-position-to="window" data-transition="slidefade">
+            </a>
+
+            <div data-role="popup" id="popupMe" data-overlay-theme="b" data-theme="b" data-corners="false">
+                <a href="#popupMe" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            </div>
+            
+            <h1>Programming languages:</h1>
+            <ul data-role="listview">
+                <li>Java</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>Javascript</li>
+                <li>HTML5 & CSS3</li>
+            </ul>
+
+
+
+                <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#home" class="ui-btn" data-icon="home" data-iconpos="top">Home</a>
+                            </li>
+
+                            <li><a href="#" class="ui-btn ui-state-disabled" data-icon="info" data-iconpos="top">About Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+        </article>
+
+    </section>
+    <!--home-->
+
+
+
+    <section data-role="page" id="s1" data-theme="a" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <a href="#home" id="exit1" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 1 of 6</h1>
+
+
+
+        </div>
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <h1>Everything starts with looks</h1>
+            <p>To look like a Nicaraguan there are some basics standards that people there go by:
+            </p>
+            <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+
+                <div data-role="collapsible">
+
+                    <h3>Shirts</h3>
+
+                    <p>The go to are polo shirts, dress shirts (Guayaberas or dinner shirts) and if you're young t-shirts. Usually not eccentric colours.</p>
+
+                    <a href="#howto1" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                    </a>
+
+                    <div data-role="popup" id="howto1" data-overlay-theme="a" data-theme="a" data-corners="false">
+                        <a href="#howto1" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    </div>
+
+                </div>
+
+                <div data-role="collapsible">
+
+                    <h3>Pants or shorts</h3>
+
+                    <p>Almost always pants. Doesnt matter if the temperature is over 40&deg;C.</p>
+
+                    <a href="#howto2" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                    </a>
+
+                    <div data-role="popup" id="howto2" data-overlay-theme="a" data-theme="a" data-corners="false">
+                        <a href="#howto2" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    </div>
+
+                </div>
+
+                <div data-role="collapsible">
+
+                    <h3>Hair</h3>
+
+                    <p>If you're a man the go to is short and women usually have long hair.</p>
+
+                    <a href="#howto3" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                    </a>
+
+                    <div data-role="popup" id="howto3" data-overlay-theme="a" data-theme="a" data-corners="false">
+                        <a href="#howto3" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    </div>
+
+                </div>
+                <div data-role="collapsible">
+                    <h3>Accessories</h3>
+
+                    <p>Men wear watches and ocasionally a wristband. Women wear bracelets, earings, rings and sometimes wristbands.</p>
+
+                    <a href="#howto4" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                    </a>
+
+                    <div data-role="popup" id="howto4" data-overlay-theme="a" data-theme="a" data-corners="false">
+                        <a href="#howto4" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <a href="#home" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="a">Back</a>
+
+
+
+            <a href="#s2" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a">Next</a>
+
+
+
+        </article>
+    </section>
+    <!--home-->
+
+
+    <section data-role="page" id="s2" data-theme="a" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <a href="#home" id="exit2" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 2 of 6</h1>
+
+
+        </div>
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <h1>The way you talk</h1>
+
+            <p>Because Nicaragua is a small country the chances of having mutual friends is very high. So conversation usually are very friendly, most men use the equivalent word to "bro" or "buddy" to refer to people they dont even know.</p>
+
+                <a href="#s1" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="a">Back</a>
+                <a href="#s3" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a">Next</a>
+                </div>
+
+
+        </article>
+    </section>
+    <!--home-->
+
+
+
+
+    <section data-role="page" id="s3" data-theme="a" data-dialog="true" data-close-btn="none">
+
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <a href="#home" id="exit" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 3 of 6</h1>
+        </div>
+
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <h1>What you talk about</h1>
+
+            <p>The go to topic to talk about is politic doesnt matter if its election season or not.</p>
+            <p>Any international sport event that theres a team representing Nicaragua becomes a hot topic to talk about.</p>
+            <p>Sports is also a very popular topic specially soccer. </p>
+
+
+            <a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="slidefade">
+            </a>
+
+            <div data-role="popup" id="popupParis" data-overlay-theme="a" data-theme="a" data-corners="false">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            </div>
+
+            <a href="#s2" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="a">Back</a>
+            <a href="#s4" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a">Next</a>
+
+
+
+        </article>
+    </section>
+    <!--home-->
+
+
+
+
+    <section data-role="page" id="s4" data-theme="a" data-dialog="true" data-close-btn="none">
+
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <a href="#home" id="exit4" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 4 of 6</h1>
+        </div>
+
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <h1>What you do</h1>
+
+            <p></p>
+
+
+
+
+
+
+            <a href="#s3" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="a">Back</a>
+            <a href="#s5" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a">Next</a>
+        
+
+        </article>
+
+    </section>
+    <!--home-->
+
+
+
+
+    <section data-role="page" id="s5" data-theme="a" data-dialog="true" data-close-btn="none">
+
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <a href="#home" id="exit5" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 5 of 6</h1>
+        </div>
+
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <h1>Where you go</h1>
+
+            <p></p>
+
+
+            <a href="#s4" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="a">Back</a>
+            <a href="#s6" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a">Next</a>
+
+
+        </article>
+
+    </section>
+    <!--home-->
+
+
+    <section data-role="page" id="s6" data-theme="a" data-dialog="true" data-close-btn="none">
+
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <a href="#home" id="exit6" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 6 of 6</h1>
+        </div>
+
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <h1>The last step is how to behave like a Nicaraguan</h1>
+
+            <p></p>
+
+            
+            <a href="#s5" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="a">Back</a>
+            <a href="#home" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a" >Finish</a>
+
+
+        </article>
+    </section>
+           
+<!--
+            <section data-role="page" id="home" data-theme="a" data-dialog="true">
+               <div data-role="header">
+                   <h1>Build an iPhone App</h1>
+               </div>
+               <div data-role="content">
+                   <p>This is a basic tutorial to how to make an iPhone app.</p>
+                   <a href="#s1" data-role="button" data-theme="a" data-iconpos="left">Start</a>
+               </div>
+               <div data-role="footer" data-position="fixed">
+                    <h4>Footer</h4>
+                </div>
+            </div>
+            
+            <div data-role="page" id="s1" data-theme="a" data-dialog="true">
+                <div data-role="header">
+                   <a href="#" data-icon="home" ></a>
+                   <h2>Page 1 of 10</h2>
+                </div>
+              <div data-role="content">
+                  <h3>1</h3>
+                  <p></p>
+              <a href="#home" data-role="button" data-theme="a" data-transition="flip">Back</a>
+              <a href="#s2" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a">Next</a>
+                </div>
+              <div data-role="footer" data-position="fixed">
+                  <h4>Footer</h4>
+              </div>
+            </section>
+            
+            <section data-role="page" id="s2" data-theme="a" data-dialog="true">
+                <div data-role="header">
+                   <h2>Page 2 of 10</h2>
+                </div>
+              <div data-role="content">
+                  <h3>2</h3>
+                  <p></p>
+              <a href="#s1" data-role="button" data-theme="a" data-transition="flip">Back</a>
+              <a href="#s3" data-role="button" data-theme="a" data-transition="flip">Next</a>
+                </div>
+              <div data-role="footer" data-position="fixed">
+                  <h4>Footer</h4>
+              </div>
+            </section>
+            
+            <section data-role="page" id="s3" data-theme="a" data-dialog="true">
+                <div data-role="header">
+                   <h2>Page 3 of 10</h2>
+                </div>
+              <div data-role="content">
+                  <h3>3</h3>
+                  <p></p>
+              <a href="#s2" data-role="button" data-theme="a" data-transition="flip">Back</a>
+              <a href="#s4" data-role="button" data-theme="a" data-transition="flip">Next</a>
+                </div>
+              <div data-role="footer" data-position="fixed">
+                  <h4>Footer</h4>
+              </div>
+            </section>
+            
+            <section data-role="page" id="s4" data-theme="a" data-dialog="true">
+                <div data-role="header">
+                   <h2>Page 4 of 10</h2>
+                </div>
+              <div data-role="content">
+                  <h3>4</h3>
+                  <p></p>
+              <a href="#s3" data-role="button" data-theme="a" data-transition="flip">Back</a>
+              <a href="#s5" data-role="button" data-theme="a" data-transition="flip">Next</a>
+                </div>
+              <div data-role="footer" data-position="fixed">
+                  <h4>Footer</h4>
+              </div>
+            </section>
+            
+            <section data-role="page" id="s5" data-theme="a" data-dialog="true">
+                <div data-role="header">
+                   <h2>Page 5 of 10</h2>
+                </div>
+              <div data-role="content">
+                  <h3>5</h3>
+                  <p></p>
+              <a href="#s4" data-role="button" data-theme="a" data-transition="flip">Back</a>
+              <a href="#s6" data-role="button" data-theme="a" data-transition="flip">Next</a>
+                </div>
+              <div data-role="footer" data-position="fixed">
+                  <h4>Footer</h4>
+              </div>
+            </section>
+            
+            <section data-role="page" id="s6" data-theme="a" data-dialog="true">
+                <div data-role="header">
+                   <h2>Page 6 of 10</h2>
+                </div>
+              <div data-role="content">
+                  <h3>6</h3>
+                  <p></p>
+              <a href="#s5" data-role="button" data-theme="a" data-transition="flip">Back</a>
+              <a href="#s7" data-role="button" data-theme="a" data-transition="flip">Next</a>
+                </div>
+              <div data-role="footer" data-position="fixed">
+                  <h4>Footer</h4>
+              </div>
+            </section>
+            
+            <section data-role="page" id="s7" data-theme="a" data-dialog="true">
+                <div data-role="header">
+                   <h2>Page 7 of 10</h2>
+                </div>
+              <div data-role="content">
+                  <h3>7</h3>
+                  <p></p>
+              <a href="#s6" data-role="button" data-theme="a" data-transition="flip">Back</a>
+              <a href="#s8" data-role="button" data-theme="a" data-transition="flip">Next</a>
+                </div>
+              <div data-role="footer" data-position="fixed">
+                  <h4>Footer</h4>
+              </div>
+            </section>
+            
+            <section data-role="page" id="s8" data-theme="a" data-dialog="true">
+                <div data-role="header">
+                   <h2>Page 8 of 10</h2>
+                </div>
+              <div data-role="content">
+                  <h3>8</h3>
+                  <p></p>
+              <a href="#s7" data-role="button" data-theme="a" data-transition="flip">Back</a>
+              <a href="#s9" data-role="button" data-theme="a" data-transition="flip">Next</a>
+                </div>
+              <div data-role="footer" data-position="fixed">
+                  <h4>Footer</h4>
+              </div>
+            </section>
+            
+            <section data-role="page" id="s9" data-theme="a" data-dialog="true">
+                <div data-role="header">
+                   <h2>Page 9 of 10</h2>
+                </div>
+              <div data-role="content">
+                  <h3>9</h3>
+                  <p></p>
+              <a href="#s8" data-role="button" data-theme="a" data-transition="flip">Back</a>
+              <a href="#s10" data-role="button" data-theme="a" data-transition="flip">Next</a>
+                </div>
+              <div data-role="footer" data-position="fixed">
+                  <h4>Footer</h4>
+              </div>
+            </section>
+            
+            <section data-role="page" id="s10" data-theme="a" data-dialog="true">
+                <div data-role="header">
+                   <h2>Page 10 of 10</h2>
+                </div>
+              <div data-role="content">
+                  <h3>10</h3>
+                  <p></p>
+              <a href="#s9" data-role="button" data-theme="a" data-transition="flip">Back</a>
+              <a href="#home" data-role="button" data-theme="a" data-transition="flip">Finish</a>
+                </div>
+              <div data-role="footer" data-position="fixed">
+                  <h4>Footer</h4>
+              </div>
+            </div>
+-->
+</body>
+</html>
